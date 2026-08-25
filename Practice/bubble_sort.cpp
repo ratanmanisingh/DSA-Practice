@@ -7,9 +7,10 @@ int main(){
     cin >> n;
     int arr[n];
     int temp;
-    cout << "Enter numbers: ";
+    // cout << "Enter numbers: ";
     for (int i = 0; i < n; i++)
     {
+        cout << "Enter numbers: ";
         cin >> arr[i];
     }
     for (int i=0;i<n-1;i++){
