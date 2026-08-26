@@ -3,9 +3,11 @@ using namespace std;
 
 int main(){
     int n;
+    cout<<"Enter the size of the array: ";
     cin>>n;
     int arr[10];
     for (int i=0;i<n;i++){
+        cout<<"Enter the numbers: ";
         cin>>arr[i];
     }
     int left =0;
@@ -18,6 +20,7 @@ int main(){
         left++;
         right--;
     }
+    cout<< "Reversed array: ";
     for (int i=0;i<n;i++){
         cout<<arr[i];
     }
