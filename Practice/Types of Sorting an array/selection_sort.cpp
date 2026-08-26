@@ -19,10 +19,10 @@ int main()
             if (arr[smallindex]>arr[j]){
                 smallindex = j;
             }
-        }
-        int temp = arr[i];
-        arr[i] = arr[smallindex];
-        arr[smallindex] = temp;
+            int temp = arr[i];
+            arr[i] = arr[smallindex];
+            arr[smallindex] = temp;
+            }
         }
     cout << "Sorted array: ";
     for (int i = 0; i < n; i++)
