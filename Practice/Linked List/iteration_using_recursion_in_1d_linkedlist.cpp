@@ -26,5 +26,4 @@ int main()
     node *head = a;
     node *current = head;
     reciter(current);
-
 }
