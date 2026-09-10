@@ -25,4 +25,5 @@ int main()
 {
     node *head = NULL;
     insertPos(head, 100, 1);
+    
 }
