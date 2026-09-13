@@ -21,7 +21,20 @@ int main(){
     a->data = 1;
     b->data = 2;
     c->data = 3;
-    node* head=NULL;
+
+    a->next=b;
+    b->next=c;
+    c->next=NULL;
+
+    node* head=a;
+
     inserBeg(head,0);
-    
+
+    node* i=head;
+
+    while(i!=NULL){
+        cout<<i->data<<" ";
+        i=i->next;
+    }
+    return 0;
 }
