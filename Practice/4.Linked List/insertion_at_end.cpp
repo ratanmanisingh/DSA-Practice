@@ -21,10 +21,10 @@ void inserEnd(node *&head, int value)
     while(current->next!=NULL){
         current=current->next;
     }
-    // current->next=newnode;
-    // while(current->next!=NULL){
-    //     cout<<current->data;
-    // }
+    current->next=newnode;
+    while(current->next!=NULL){
+        cout<<current->data;
+    }
 }
 
 int main()

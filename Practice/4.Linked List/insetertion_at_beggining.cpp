@@ -21,6 +21,7 @@ int main(){
     a->data = 1;
     b->data = 2;
     c->data = 3;
-
+    node* head=NULL;
+    inserBeg(head,0);
     
 }
