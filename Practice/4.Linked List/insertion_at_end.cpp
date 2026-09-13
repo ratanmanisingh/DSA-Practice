@@ -14,7 +14,6 @@ void inserEnd(node *&head, int value)
     newnode->next = NULL;
 
     if(head==NULL){
-        head=newnode;
     }
 
     node* current=head;
@@ -22,21 +21,31 @@ void inserEnd(node *&head, int value)
         current=current->next;
     }
     current->next=newnode;
-    while(current->next!=NULL){
-        cout<<current->data;
-    }
 }
 
 int main()
 {
     node *a = new node();
     node *b = new node();
-    // node *c = new node();
+    node *c = new node();
 
     a->data = 1;
     b->data = 2;
-    // c->data = 3;
-    inserEnd(a,5);
-    
+    c->data = 3;
 
+    a->next=b;
+    b->next=c;
+    c->next=NULL;
+
+    node* head = a;
+
+    inserEnd(head,4);
+
+    node* i = head;
+
+    while(i!=NULL){
+        cout<<i->data<<" ";
+        i=i->next;
+    }
+    return 0;
 }
