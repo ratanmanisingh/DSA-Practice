@@ -4,12 +4,12 @@ using namespace std;
 struct node
 {
     int data;
-    node *next;
+    node* next;
 };
 
-void inserEnd(node *&head, int value)
+void inserEnd(node* &head, int value)
 {
-    node *newnode = new node();
+    node* newnode = new node();
     newnode->data = value;
     newnode->next = NULL;
 
@@ -25,9 +25,9 @@ void inserEnd(node *&head, int value)
 
 int main()
 {
-    node *a = new node();
-    node *b = new node();
-    node *c = new node();
+    node* a = new node();
+    node* b = new node();
+    node* c = new node();
 
     a->data = 1;
     b->data = 2;
