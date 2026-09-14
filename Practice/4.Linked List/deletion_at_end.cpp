@@ -7,46 +7,47 @@ struct node
     node *next;
 };
 
-void delpos(node *&head, int pos)
+void delend(node* &head)
 {
-    if (head == nullptr)
+    if (head == NULL)
         return;
 
-    if (pos == 1){
-        node *target = head;
-        head = head->next;
-        delete target;
+    if (head->next==NULL){
+        delete head;
+        head = NULL;
         return;
     }
+
     node *temp = head;
 
-    for (int i=1; i<pos-1 && temp->next !=nullptr; i++)
-    {
-        temp = temp->next;
+    while(temp->next->next!=NULL){
+        temp=temp->next;
     }
-
-    if (temp->next == nullptr)
-        return;
-
-    node *target = temp->next;
-    temp->next = target->next;
-    delete target;
+    delete temp->next;
+    temp->next=NULL;
 }
 
-void printList(node *head){
-    while (head != nullptr){
-        cout << head->data << " ";
-        head = head->next;
-    }
-}
 
 int main(){
-    node *a = new node{10, nullptr};
-    node *b = new node{20, nullptr};
-    
+    node* a = new node();
+    node* b = new node();
+    node* c = new node();
+
+    a->data = 5;
+    b->data = 10;
+    c->data = 20;
+
     a->next = b;
+    b->next = c;
+    c->next = NULL;
+
     node *head = a;
 
-    delpos(head, 2);
-    printList(head);
+    delend(head);
+    node *i = head;
+    while (i != NULL)
+    {
+        cout << i->data << " ";
+        i = i->next;
+    }
 }
