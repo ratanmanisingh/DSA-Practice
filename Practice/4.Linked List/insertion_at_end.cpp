@@ -44,7 +44,6 @@ int main()
     inserEnd(head,4);
 
     node* i = head;
-
     while(i!=NULL){
         cout<<i->data<<" ";
         i=i->next;
