@@ -4,14 +4,14 @@ using namespace std;
 struct node
 {
     int data;
-    node *next;
+    node* next;
 };
 
-void insertPos(node *&head, int value, int pos)
+void insertPos(node* &head, int value, int pos)
 {
-    node *newnode = new node();
+    node* newnode = new node();
     newnode->data = value;
-    node *current = head;
+    node* current = head;
 
     for (int i = 0; i < pos - 1; i++)
     {
@@ -23,9 +23,9 @@ void insertPos(node *&head, int value, int pos)
 
 // second method
 
-// Node *insertAtPosition(Node *head, int value, int pos)
+// Node* insertAtPosition(Node* head, int value, int pos)
 // {
-//     Node *newNode = new Node();
+//     Node* newNode = new Node();
 //     newNode->data = value;
 
 //     if (pos == 1)
@@ -34,7 +34,7 @@ void insertPos(node *&head, int value, int pos)
 //         return newNode;
 //     }
 
-//     Node *temp = head;
+//     Node* temp = head;
 //     for (int i = 1; i < pos - 1 && temp != NULL; i++)
 //     {
 //         temp = temp->next; // reach node before target position
@@ -48,9 +48,9 @@ void insertPos(node *&head, int value, int pos)
 
 int main()
 {
-    node *a = new node();
-    node *b = new node();
-    node *c = new node();
+    node* a = new node();
+    node* b = new node();
+    node* c = new node();
 
     a->data = 10;
     b->data = 20;
@@ -60,11 +60,12 @@ int main()
     b->next = c;
     c->next = NULL;
 
-    node *head = a;
+    node* head = a;
 
     insertPos(head, 15, 1);
+    insertPos(head, 25, 3);
 
-    node *i = head;
+    node* i = head;
 
     while (i != NULL)
     {
