@@ -14,6 +14,8 @@ void inserEnd(node* &head, int value)
     newnode->next = NULL;
 
     if(head==NULL){
+        head=newnode;
+        return;
     }
 
     node* current=head;
