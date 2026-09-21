@@ -4,12 +4,11 @@ using namespace std;
 struct node
 {
     int data;
-    node *next;
+    node* next;
 };
 
-void insertBeginning(node *&head, node *&tail, int value)
+void insertBeginning(node* &head, node* &tail, int value)
 {
-
     node *newnode = new node();
     newnode->data = value;
 
@@ -28,12 +27,12 @@ int main()
 {
     int n;
     cin >> n;
-    node *head = NULL;
-    node *tail = NULL;
+    node* head = NULL;
+    node* tail = NULL;
 
     for (int i = 0; i < n; i++)
     {
-        node *newnode = new node();
+        node* newnode = new node();
         cin >> newnode->data;
         newnode->next = NULL;
 
@@ -55,7 +54,7 @@ int main()
 
     insertBeginning(head, tail, 4);
 
-    node *current = head;
+    node* current = head;
 
     do
     {
