@@ -9,11 +9,13 @@ struct node
 
 int main(){
     int n;
+    cout<<"Enter number of nodes: ";
     cin>>n;
     node* head = NULL;
     node* tail = NULL;
     for(int i=0;i<n;i++){
         node* newnode= new node();
+        cout<<"Enter element: ";
         cin>>newnode->data;
         newnode->next=NULL;
 
