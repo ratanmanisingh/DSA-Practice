@@ -23,5 +23,14 @@ int main(){
     a->prev=NULL;
     b->prev=a;
     c->prev=b;
-    
+
+    node* head = a;
+
+    node* i=head;
+
+    // Traversal (forward)
+    while(i!=NULL){
+        cout<<i->data<<" ";
+        i = i->next;
+    }
 }
