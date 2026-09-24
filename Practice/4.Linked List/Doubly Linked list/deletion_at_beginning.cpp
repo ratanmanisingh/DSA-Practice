@@ -10,22 +10,17 @@ struct node
 
 void deleteAtBeginning(node *&head)
 {
-    if (head == NULL)
-        return;
-
+    if (head == NULL) return;
     node *temp = head;
     head = head->next;
 
-    if (head != NULL)
-    {
+    if (head != NULL){
         head->prev = NULL; // naye head ka prev fix karo
     }
-
     delete temp;
 
     node *i = head;
-    while (i != NULL)
-    {
+    while (i != NULL){
         cout << i->data << " ";
         i = i->next;
     }
