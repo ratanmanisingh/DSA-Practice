@@ -9,10 +9,12 @@ struct node{
 int main(){
     node* a=new node();
     node* b=new node();
+
     a->data=9;
     a->next=b;
     b->data=4;
     b->next=NULL;
+    
     node* head = a;
     node* current=head;
     while(current!=NULL){
