@@ -33,6 +33,7 @@ int main(){
 //     a->next = b;
 //     b->data = 4;
 //     b->next = NULL;
+
 //     node *head = a;
 //     int key;
 //     cin>>key;
