@@ -25,7 +25,6 @@ int main(){
     c->prev=b;
 
     node* head = a;
-
     node* i=head;
 
     // Traversal (forward)
