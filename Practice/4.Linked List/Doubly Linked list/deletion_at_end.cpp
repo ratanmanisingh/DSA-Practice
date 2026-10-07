@@ -29,6 +29,7 @@ void deleteAtEnd(node *&head)
     temp->prev->next = NULL; // second-last ka next NULL karo
     delete temp;
 }
+
 int main(){
     
 }
