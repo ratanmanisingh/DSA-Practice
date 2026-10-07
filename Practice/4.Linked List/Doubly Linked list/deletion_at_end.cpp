@@ -31,5 +31,4 @@ void deleteAtEnd(node *&head)
 }
 
 int main(){
-    
 }
