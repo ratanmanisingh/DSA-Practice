@@ -15,7 +15,6 @@ int main(){
     }
 }
 
-
 // 2. ABC in the form of Right angle triangle.
 
 int main()
