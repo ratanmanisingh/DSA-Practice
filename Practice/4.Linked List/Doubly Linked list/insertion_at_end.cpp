@@ -26,7 +26,6 @@ void insertAtEnd(node *&head, int value)
     {
         temp = temp->next;        // last node dhundo
     }
-
     temp->next = newnode;         // last node -> naya node
     newnode->prev = temp;         // naya node -> purana last node
 
