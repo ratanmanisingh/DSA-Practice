@@ -4,13 +4,13 @@ using namespace std;
 struct node
 {
     int data;
-    node *next;
-    node *prev;
+    node* next;
+    node* prev;
 };
 
-void insertAtPosition(node *&head, int value, int pos)
+void insertAtPosition(node* &head, int value, int pos)
 {
-    node *newnode = new node();
+    node* newnode = new node();
     newnode->data = value;
 
     if (pos == 1)
@@ -23,7 +23,7 @@ void insertAtPosition(node *&head, int value, int pos)
         return;
     }
 
-    node *prevNode = head;
+    node* prevNode = head;
     for (int i = 1; i < pos - 1; i++)
     {
         prevNode = prevNode->next;                  // target se pehle wale tak pahuncho
@@ -39,7 +39,7 @@ void insertAtPosition(node *&head, int value, int pos)
 
     prevNode->next = newnode;                    // step 5
 
-    node *i = head;
+    node* i = head;
     while (i != NULL)
     {
         cout << i->data << " ";
@@ -52,10 +52,11 @@ int main()
     int n;
     cout << "Enter number of nodes: ";
     cin >> n;
-    node *head = NULL;
+    node* head = NULL;
+    
     for (int i = 0; i < n; i++)
     {
-        node *newnode = new node();
+        node* newnode = new node();
         cout << "Enter element: ";
         cin >> newnode->data;
         newnode->next = NULL;
@@ -68,7 +69,7 @@ int main()
         }
         else
         {
-            node *last = head;
+            node* last = head;
             while (last->next != NULL)
             {
                 last = last->next;
