@@ -153,12 +153,10 @@ double evaluatePostfix(const string &postfix)
             throw invalid_argument(string("Invalid symbol in postfix expression: ") + ch);
         }
     }
-
     if (token.size() > 0)
     {
         values.push(stod(token));
     }
-
     if (values.size() != 1)
         throw invalid_argument("Invalid postfix expression.");
 
@@ -184,6 +182,5 @@ int main()
         cerr << "Error: " << ex.what() << endl;
         return 1;
     }
-
     return 0;
 }
