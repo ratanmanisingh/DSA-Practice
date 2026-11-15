@@ -108,13 +108,11 @@ double evaluatePostfix(const string &postfix)
             token.clear();
             continue;
         }
-
         if (isdigit(static_cast<unsigned char>(ch)) || ch == '.')
         {
             token += ch;
             continue;
         }
-
         if (ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '^')
         {
             if (values.size() < 2)
