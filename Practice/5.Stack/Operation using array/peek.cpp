@@ -12,7 +12,6 @@ void push(int value)
         cout << "arr Overflow!" << endl;
         return;
     }
-
     top++;
     arr[top] = value;
 
