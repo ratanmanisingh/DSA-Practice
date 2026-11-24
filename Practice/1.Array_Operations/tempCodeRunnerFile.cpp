@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 int main(){
     int n;
     cout << "Enter the size of the array: ";
@@ -16,7 +19,7 @@ int main(){
         arr[i] = arr[i - 1];
     }
     arr[n-1] = a;
-    cout << "Array after insertion: ";
+    cout << "Array after Insertion: ";
     for (int i = 0; i <= n; i++)
     {
         cout << arr[i] << " ";

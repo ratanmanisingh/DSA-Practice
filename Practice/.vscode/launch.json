@@ -2,16 +2,17 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C/C++ Runner: Debug Session",
+      "name": "C/C++: Debug active file",
       "type": "cppdbg",
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "c:/Users/hp/Documents/DSA/Practice",
-      "program": "c:/Users/hp/Documents/DSA/Practice/build/Debug/outDebug",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
+      "externalConsole": false,
+      "cwd": "${fileDirname}",
+      "program": "/tmp/${fileBasenameNoExtension}",
+      "MIMode": "lldb",
+      "miDebuggerPath": "/usr/bin/lldb",
+      "preLaunchTask": "C/C++: clang++ build active file",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
