@@ -22,13 +22,11 @@ int main(){
         if(head==NULL){
             head=newnode;
             tail=newnode;
-
         }
         else{
             tail->next=newnode;
             tail=newnode;
         }
-
     }
     tail->next=head;
     node* current=head;
